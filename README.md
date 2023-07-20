@@ -2,6 +2,8 @@
 
 全部开源，完全可商用的**中文版 Llama2 模型及中文 SFT 数据集**。
 
+![Chinese LLaMA2 7B](.github/preview.jpg)
+
 ## 在线试玩
 
 > Talk is cheap, Show you the Demo.
