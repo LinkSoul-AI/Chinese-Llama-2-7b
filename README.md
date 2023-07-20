@@ -31,7 +31,7 @@ generate_ids = model.generate(tokenizer(prompt, return_tensors='pt').input_ids.c
 
 ## 资源下载
 
-- 模型下载：[Chinese Llama2 Chat Model](#)
+- 模型下载：[Chinese Llama2 Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
 
 > 我们使用了中文 SFT 数据集，数据量 1000 万。
 
