@@ -8,7 +8,7 @@
 
 ## 基础演示
 
-<img src=".github/demo.gif" />
+![Base Demo](.github/demo.gif)
 
 ## 在线试玩
 
