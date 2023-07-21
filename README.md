@@ -44,6 +44,21 @@ prompt = instruction.format("用中文回答，When is the best time to visit Be
 generate_ids = model.generate(tokenizer(prompt, return_tensors='pt').input_ids.cuda(), max_new_tokens=4096, streamer=streamer)
 ```
 
+## Docker
+
+你可以使用仓库中的 Dockerfile，来快速制作基于 Nvidia 最新版本的 `nvcr.io/nvidia/pytorch:23.06-py3` 基础镜像，在任何地方使用容器来运行中文的 LLaMA2 模型应用。
+
+```bash
+docker build -t linksoul/chinese-llama2-chat .
+```
+
+镜像构建完毕，使用命令运行镜像即可：
+
+```bash
+docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 --rm -it -v `pwd`/LinkSoul:/app/LinkSoul -p 7860:7860 linksoul/chinese-llama2-chat
+```
+
+
 ## 如何训练
 
 ```bash
@@ -53,6 +68,8 @@ python train.py --args ...
 ## 相关项目
 
 - [Llama2](https://ai.meta.com/llama/)
+- [soulteary/docker-llama2-chat](https://github.com/soulteary/docker-llama2-chat)
+
 
 ## 项目协议
 
