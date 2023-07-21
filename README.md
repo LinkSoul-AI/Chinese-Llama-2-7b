@@ -106,3 +106,7 @@ torchrun --nnodes=1 --node_rank=0 --nproc_per_node=8 \
 ## 项目协议
 
 [Apache-2.0 license](https://github.com/LinkSoul-AI/Chinese-Llama-2-7b/blob/main/LICENSE)
+
+## 微信交流群
+
+<img src=".github/QRcode.jpg" alt="微信交流群" width="300"/>
