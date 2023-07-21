@@ -38,7 +38,7 @@ instruction = """[INST] <<SYS>>\nYou are a helpful, respectful and honest assist
 
             If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n<</SYS>>\n\n{} [/INST]"""
 
-prompt = instruction.format("用英文回答，什么是夫妻肺片？")
+prompt = instruction.format("用中文回答，When is the best time to visit Beijing, and do you have any suggestions for me?")
 generate_ids = model.generate(tokenizer(prompt, return_tensors='pt').input_ids.cuda(), max_new_tokens=4096, streamer=streamer)
 ```
 
