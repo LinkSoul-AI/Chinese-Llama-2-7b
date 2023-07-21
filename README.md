@@ -1,6 +1,6 @@
 # Chinese Llama 2 7B
 
-全部开源，完全可商用的**中文版 Llama2 模型及中英文 SFT 数据集**，输入格式严格遵循llama-2-chat的输入格式，以方便应用所有针对llama-2-chat的优化。
+全部开源，完全可商用的**中文版 Llama2 模型及中英文 SFT 数据集**，输入格式严格遵循*llama-2-chat*的输入格式，以方便应用所有针对*llama-2-chat*的优化。
 
 ![Chinese LLaMA2 7B](.github/preview.jpg)
 
