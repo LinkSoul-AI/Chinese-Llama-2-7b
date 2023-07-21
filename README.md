@@ -1,5 +1,7 @@
 # Chinese Llama 2 7B
 
+![](https://img.shields.io/badge/LLaMA2-Chinese-green) ![](https://img.shields.io/badge/Commercial-support-green)  ![](https://img.shields.io/badge/License-Apache_v2-green)
+
 全部开源，完全可商用的**中文版 Llama2 模型及中英文 SFT 数据集**，输入格式严格遵循 *llama-2-chat* 格式，兼容适配所有针对原版 *llama-2-chat* 模型的优化。
 
 ![Chinese LLaMA2 7B](.github/preview.jpg)
