@@ -12,7 +12,8 @@ if model_path.endswith("4bit"):
     model = AutoModelForCausalLM.from_pretrained(
             model_path,
             load_in_4bit=True,
-            torch_dtype=torch.float16
+            torch_dtype=torch.float16,
+            device_map='auto'
         )
 else:
     model = AutoModelForCausalLM.from_pretrained(model_path).half().cuda()
