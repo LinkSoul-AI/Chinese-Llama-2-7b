@@ -1,9 +1,21 @@
+import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, TextStreamer
 
-model_path = "LinkSoul/Chinese-Llama-2-7b"
+# Original version
+# model_path = "LinkSoul/Chinese-Llama-2-7b"
+# 4 bit version
+model_path = "LinkSoul/Chinese-Llama-2-7b-4bit"
+
 
 tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
-model = AutoModelForCausalLM.from_pretrained(model_path).half().cuda()
+if model_path.endswith("4bit"):
+    model = AutoModelForCausalLM.from_pretrained(
+            model_path,
+            load_in_4bit=True,
+            torch_dtype=torch.float16
+        )
+else:
+    model = AutoModelForCausalLM.from_pretrained(model_path).half().cuda()
 streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
 
 instruction = """[INST] <<SYS>>\nYou are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe.  Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.
