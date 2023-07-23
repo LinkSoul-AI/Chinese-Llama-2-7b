@@ -23,6 +23,10 @@
 
 - 4bit量化：[Chinese Llama2 4bit Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-4bit)
 
+- GGML Q4 模型（社区版）：
+  - [https://huggingface.co/rffx0/Chinese-Llama-2-7b-ggml-model-q4_0](https://huggingface.co/rffx0/Chinese-Llama-2-7b-ggml-model-q4_0)
+  - [https://huggingface.co/soulteary/Chinese-Llama-2-7b-ggml-q4](https://huggingface.co/soulteary/Chinese-Llama-2-7b-ggml-q4)
+
 > 我们使用了中英文 SFT 数据集，数据量 1000 万。
 
 - 数据集：[https://huggingface.co/datasets/LinkSoul/instruction_merge_set](https://huggingface.co/datasets/LinkSoul/instruction_merge_set)
@@ -60,6 +64,18 @@ docker build -t linksoul/chinese-llama2-chat .
 docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 --rm -it -v `pwd`/LinkSoul:/app/LinkSoul -p 7860:7860 linksoul/chinese-llama2-chat
 ```
 
+## GGML / Llama.cpp
+
+想要在 CPU 环境运行 LLaMA2 模型么？使用下面的方法吧。
+
+- 使用 `ggml/convert_to_ggml.py` 进行转换操作，详见脚本支持的 CLI 参数。
+- 或使用 `docker pull soulteary/llama2:converter` 下载模型格式转换工具镜像，在 Docker 容器中使用下面的两条命令完成操作（教程 [构建能够使用 CPU 运行的 MetaAI LLaMA2 中文大模型
+](https://zhuanlan.zhihu.com/p/645426799)）：
+
+```bash
+python3 convert.py /app/LinkSoul/Chinese-Llama-2-7b/ --outfile /app/soulteary/Chinese-Llama-2-7b-ggml.bin
+./quantize /app/soulteary/Chinese-Llama-2-7b-ggml.bin /app/soulteary/Chinese-Llama-2-7b-ggml-q4.bin q4_0
+```
 
 ## 如何训练
 
