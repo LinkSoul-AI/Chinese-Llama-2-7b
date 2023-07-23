@@ -73,8 +73,8 @@ docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 --r
 ](https://zhuanlan.zhihu.com/p/645426799)）：
 
 ```bash
-python3 convert.py /app/LinkSoul/Chinese-Llama-2-7b/ --outfile /app/soulteary/Chinese-Llama-2-7b-ggml.bin
-./quantize /app/soulteary/Chinese-Llama-2-7b-ggml.bin /app/soulteary/Chinese-Llama-2-7b-ggml-q4.bin q4_0
+python3 convert.py /app/LinkSoul/Chinese-Llama-2-7b/ --outfile /app/LinkSoul/Chinese-Llama-2-7b-ggml.bin
+./quantize /app/LinkSoul/Chinese-Llama-2-7b-ggml.bin /app/LinkSoul/Chinese-Llama-2-7b-ggml-q4.bin q4_0
 ```
 
 ## 如何训练
