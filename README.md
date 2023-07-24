@@ -14,7 +14,7 @@
 
 > Talk is cheap, Show you the Demo.
 
-- [Demo 地址 / HuggingFace Spaces](https://huggingface.co/spaces/LinkSoul/Chinese-Llama-2-7b)
+- [Demo 地址 / Hugging Face Spaces](https://huggingface.co/spaces/LinkSoul/Chinese-Llama-2-7b)
 - [Colab 一键启动](#) // 正在准备
 
 ## 资源下载
