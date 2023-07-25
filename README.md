@@ -13,9 +13,9 @@
 ## 在线试玩
 
 > Talk is cheap, Show you the Demo.
-
 - [Demo 地址 / HuggingFace Spaces](https://huggingface.co/spaces/LinkSoul/Chinese-Llama-2-7b)
-- [Colab 一键启动](#) // 正在准备
+- [Colab (FP16/需要开启高RAM,免费版无法使用)](https://colab.research.google.com/github/LinkSoul-AI/Chinese-Llama-2-7b/blob/main/chinese-llama-2-7b.ipynb) 
+- [Colab (INT4/需要开启高RAM,免费版无法使用)](https://colab.research.google.com/github/LinkSoul-AI/Chinese-Llama-2-7b/blob/main/chinese-llama-2-7b-4bit.ipynb) 
 
 ## 资源下载
 
