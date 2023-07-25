@@ -1,4 +1,4 @@
-# Chinese Llama 2 7B
+![image](https://github.com/shiyemin/Chinese-Llama-2-7b/assets/1501158/002b2835-99ef-4e2d-8bc3-64d6584a7380)# Chinese Llama 2 7B
 
 [![](https://img.shields.io/badge/LLaMA2-Chinese-blue)](https://github.com/LinkSoul-AI/Chinese-Llama-2-7b) [![](https://img.shields.io/badge/Commercial-Support-blue)](https://github.com/LinkSoul-AI/Chinese-Llama-2-7b) [![](https://img.shields.io/badge/License-Apache_v2-blue)](https://github.com/LinkSoul-AI/Chinese-Llama-2-7b/blob/main/LICENSE) [![](https://img.shields.io/badge/HuggingFace-Live_Demo-green)](https://huggingface.co/spaces/LinkSoul/Chinese-Llama-2-7b) [![](https://img.shields.io/badge/Datasets-instruction_merge_set-blue)](https://huggingface.co/datasets/LinkSoul/instruction_merge_set)
 
@@ -19,7 +19,9 @@
 
 ## 资源下载
 
-- 模型下载：[Chinese Llama2 Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
+- 模型下载
+  - HuggingFace: [Chinese Llama2 Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
+  - 百度网盘: [1.1 加强火力版](https://pan.baidu.com/s/1RFp3rUKsn5oTYE6rignIGA?pwd=qyrh)
 
 - 4bit量化：[Chinese Llama2 4bit Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-4bit)
 
