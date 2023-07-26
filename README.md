@@ -21,6 +21,7 @@
 
 - 模型下载
   - HuggingFace: [Chinese Llama2 Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
+  - 百度网盘: [1.0 正式版](https://pan.baidu.com/s/1GQ9S0szo7LCJIkGoAHciDg?pwd=zusq)
   - 百度网盘: [1.1 加强火力版](https://pan.baidu.com/s/1RFp3rUKsn5oTYE6rignIGA?pwd=qyrh)
 
 - 4bit量化：[Chinese Llama2 4bit Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-4bit)
