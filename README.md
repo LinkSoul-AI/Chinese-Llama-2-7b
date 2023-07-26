@@ -26,7 +26,8 @@
 
 - 4bit量化：[Chinese Llama2 4bit Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-4bit)
 
-- GGML Q4 模型（社区版）：
+- GGML Q4 模型：
+  - [https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-ggml](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-ggml)
   - [https://huggingface.co/rffx0/Chinese-Llama-2-7b-ggml-model-q4_0](https://huggingface.co/rffx0/Chinese-Llama-2-7b-ggml-model-q4_0)
   - [https://huggingface.co/soulteary/Chinese-Llama-2-7b-ggml-q4](https://huggingface.co/soulteary/Chinese-Llama-2-7b-ggml-q4)
 
