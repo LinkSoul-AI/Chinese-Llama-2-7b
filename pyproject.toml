@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cllama2"
+version = "1.1"
+description = "Chinese Llama-2 7B."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "accelerate>=0.21", "einops", "fastapi", "gradio", "httpx", "markdown2[all]", "nh3", "numpy",
+    "peft", "prompt_toolkit>=3.0.0", "pydantic<=2.0", "requests", "rich>=10.0.0", "sentencepiece",
+    "shortuuid", "shortuuid", "tiktoken", "tokenizers>=0.12.1", "torch",
+    "transformers>=4.31.0", "uvicorn"
+]
+
+[project.optional-dependencies]
+dev = ["black==23.3.0", "pylint==2.8.2"]
+
+[project.urls]
+"Homepage" = "https://github.com/LinkSoul-AI/Chinese-Llama-2-7b"
+"Bug Tracker" = "https://github.com/LinkSoul-AI/Chinese-Llama-2-7b/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
