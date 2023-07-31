@@ -17,6 +17,18 @@
 - [Colab (FP16/需要开启高RAM,免费版无法使用)](https://colab.research.google.com/github/LinkSoul-AI/Chinese-Llama-2-7b/blob/main/chinese-llama-2-7b.ipynb) 
 - [Colab (INT4/需要开启高RAM,免费版无法使用)](https://colab.research.google.com/github/LinkSoul-AI/Chinese-Llama-2-7b/blob/main/chinese-llama-2-7b-4bit.ipynb) 
 
+## 最新更新
+- 7月31号 基于 Chinese-llama2-7b 的中英双语语音-文本 [LLaSM](https://huggingface.co/spaces/LinkSoul/LLaSM) 多模态模型开源 🔥🔥🔥
+- 7月31号 基于 Chinese-llama2-7b 的中英双语视觉-文本 [Chinese-LLaVA](https://huggingface.co/spaces/LinkSoul/Chinese-LLaVa) 多模态模型开源 🔥🔥🔥
+- 7月26号 Chinese-llama2-7b-ggml 模型开源🔥🔥
+- 7月23日 更新7b模型，添加API，提供4bit量化模型🔥🔥
+- 7月22号 SFT训练/推理代码上线 🔥
+- 7月21号 docker 一键部署上线 🔥
+- 7月21号 demo上线 🔥
+- 7月21号 中英双语 SFT 数据开源 🔥🔥
+- 7月21号 Chinese-llama2-7b 模型开源 🔥🔥
+
+
 ## 资源下载
 
 - 模型下载
