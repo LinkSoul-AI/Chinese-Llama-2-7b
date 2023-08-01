@@ -61,6 +61,11 @@ async def create_item(request: Request):
 if __name__ == '__main__':
     model_path = "LinkSoul/Chinese-Llama-2-7b"
     tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
-    model = AutoModelForCausalLM.from_pretrained(model_path).half().cuda()
+    model = AutoModelForCausalLM.from_pretrained(
+            model_path,
+            load_in_4bit=model_path.endswith("4bit"),
+            torch_dtype=torch.float16,
+            device_map='auto'
+        )
     model.eval()
     uvicorn.run(app, host='0.0.0.0', port=8000, workers=1)
