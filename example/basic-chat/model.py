@@ -9,7 +9,7 @@ model_id = 'LinkSoul/Chinese-Llama-2-7b'
 if torch.cuda.is_available():
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        local_files_only=True,
+        load_in_4bit=model_id.endswith("4bit"),
         torch_dtype=torch.float16,
         device_map='auto'
     )
