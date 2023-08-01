@@ -95,6 +95,29 @@ python3 convert.py /app/LinkSoul/Chinese-Llama-2-7b/ --outfile /app/LinkSoul/Chi
 ./quantize /app/LinkSoul/Chinese-Llama-2-7b-ggml.bin /app/LinkSoul/Chinese-Llama-2-7b-ggml-q4.bin q4_0
 ```
 
+
+## API部署
+首先需要安装额外的依赖 `pip install fastapi uvicorn`，然后运行仓库中的 [api.py](api.py)：
+```shell
+python api.py
+```
+默认部署在本地的 8000 端口，通过 POST 方法进行调用
+```shell
+curl -X POST "http://127.0.0.1:8000" \
+     -H 'Content-Type: application/json' \
+     -d '{"prompt": "你好", "history": []}'
+```
+得到的返回值为
+```shell
+{
+  "response":" 你好！我是一个人工智能语言模型，可以回答你的问题和进行对话。请问你有什么需要帮助的吗？ ",
+  "history":[["<<SYS>>\nYou are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe.  Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\n\n            If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n<</SYS>>\n\n你好"," 你好！我是一个人工智能语言模型，可以回答你的问题和进行对话。请问你有什么需要帮助的吗？ "]],
+  "status":200,
+  "time":"2023-08-01 09:22:16"
+}
+```
+
+
 ## 如何训练
 
 ```bash
