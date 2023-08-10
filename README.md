@@ -44,6 +44,7 @@
   - [https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-ggml](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-ggml)
   - [https://huggingface.co/rffx0/Chinese-Llama-2-7b-ggml-model-q4_0](https://huggingface.co/rffx0/Chinese-Llama-2-7b-ggml-model-q4_0)
   - [https://huggingface.co/soulteary/Chinese-Llama-2-7b-ggml-q4](https://huggingface.co/soulteary/Chinese-Llama-2-7b-ggml-q4)
+  - 百度网盘: [Chinese-Llama-2-7b-ggml](https://pan.baidu.com/s/1yfTeBgkqZ4DV00Q-XrLq2Q?pwd=bwvd)
 
 > 我们使用了中英文 SFT 数据集，数据量 1000 万。
 
