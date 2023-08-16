@@ -96,6 +96,24 @@ python3 convert.py /app/LinkSoul/Chinese-Llama-2-7b/ --outfile /app/LinkSoul/Chi
 ./quantize /app/LinkSoul/Chinese-Llama-2-7b-ggml.bin /app/LinkSoul/Chinese-Llama-2-7b-ggml-q4.bin q4_0
 ```
 
+量化配置的定义:
+
+转自: <https://www.reddit.com/r/LocalLLaMA/comments/139yt87/notable_differences_between_q4_2_and_q5_1/>
+
+  * q4_0 = 32 numbers in chunk, 4 bits per weight, 1 scale value at 32-bit float (5 bits per value in average), each weight is given by the common scale * quantized value.
+
+  * q4_1 = 32 numbers in chunk, 4 bits per weight, 1 scale value and 1 bias value at 32-bit float (6 bits per value in average), each weight is given by the common scale * quantized value + common bias.
+
+  * q4_2 = same as q4_0, but 16 numbers in chunk, 4 bits per weight, 1 scale value that is 16-bit float, same size as q4_0 but better because chunks are smaller.
+
+  * q4_3 = already dead, but analogous: q4_1 but 16 numbers in chunk, 4 bits per weight, scale value that is 16 bit and bias also 16 bits, same size as q4_1 but better because chunks are smaller.
+
+  * q5_0 = 32 numbers in chunk, 5 bits per weight, 1 scale value at 16-bit float, size is 5.5 bits per weight
+
+  * q5_1 = 32 numbers in a chunk, 5 bits per weight, 1 scale value at 16 bit float and 1 bias value at 16 bit, size is 6 bits per weight.
+
+  * q8_0 = same as q4_0, except 8 bits per weight, 1 scale value at 32 bits, making total of 9 bits per weight.
+
 
 ## API部署
 首先需要安装额外的依赖 `pip install fastapi uvicorn`，然后运行仓库中的 [api.py](api.py)：
