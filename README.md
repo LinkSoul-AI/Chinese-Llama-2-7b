@@ -18,6 +18,7 @@
 - [Colab (INT4/需要开启高RAM,免费版无法使用)](https://colab.research.google.com/github/LinkSoul-AI/Chinese-Llama-2-7b/blob/main/chinese-llama-2-7b-4bit.ipynb) 
 
 ## 最新更新
+- 10月26日 提供始智AI链接[Chinese Llama2 Chat Model](https://www.wisemodel.cn/models/LinkSoul/Chinese-Llama-2-7b/intro) 🔥🔥🔥
 - 8月24日 新加ModelScope链接[Chinese Llama2 Chat Model](https://www.modelscope.cn/linksoul/Chinese-Llama-2-7b) 🔥🔥🔥
 - 7月31号 基于 Chinese-llama2-7b 的中英双语语音-文本 [LLaSM](https://github.com/LinkSoul-AI/LLaSM) 多模态模型开源 🔥🔥🔥
 - 7月31号 基于 Chinese-llama2-7b 的中英双语视觉-文本 [Chinese-LLaVA](https://github.com/LinkSoul-AI/Chinese-LLaVA) 多模态模型开源 🔥🔥🔥
@@ -33,6 +34,7 @@
 ## 资源下载
 
 - 模型下载
+  - 始智AI: [Chinese Llama2 Chat Model](https://www.wisemodel.cn/models/LinkSoul/Chinese-Llama-2-7b/intro)
   - ModelScope: [Chinese Llama2 Chat Model](https://www.modelscope.cn/linksoul/Chinese-Llama-2-7b)
   - HuggingFace: [Chinese Llama2 Chat Model](https://huggingface.co/LinkSoul/Chinese-Llama-2-7b)
   - 百度网盘: [1.0 正式版](https://pan.baidu.com/s/1GQ9S0szo7LCJIkGoAHciDg?pwd=zusq)
